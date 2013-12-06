@@ -17,3 +17,4 @@ def hours_ahead(request, offset):
     dt = datetime_lib.datetime.now() + datetime_lib.timedelta(hours=offset)
     return render(request, 'hours_ahead.html', {'hour_offset': dt})
 
+
